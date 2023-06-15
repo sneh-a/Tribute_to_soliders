@@ -1,0 +1,448 @@
+<html><head>
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: Verdana, sans-serif;
+            margin-top: 20px;
+            background-color: #000000;
+            background-image: url(1n.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .mySlides {
+            display: none
+        }
+
+        /* img { */
+        /* vertical-align: middle; */
+        /* } */
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1000px;
+            /* height:100%; */
+            position: relative;
+            /* margin: auto; */
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            color: rgb(154, 154, 154);
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            color: rgb(154, 154, 154);
+            /* background-color: rgba(0, 0, 0, 0.8); */
+        }
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+
+        .numbertext {
+            /* background-color: #000000; */
+            color: #000000;
+            font-size: 12px;
+            /* padding: 8px 12px; */
+            position: absolute;
+            /* top: 0; */
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #b23d3dce;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .head6 {
+            height: 26rem;
+            width: 100%;
+            background-color: red;
+            color: aqua;
+            margin-bottom: 30px;
+        }
+
+        .head5 {
+            background-image: url(new1\ \(2\).png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 26rem;
+            width: 100%;
+            background-color: red;
+            color: aqua;
+            margin-bottom: 30px;
+        }
+
+        .head3 {
+            height: 26rem;
+            width: 100%;
+            background-image: url(2.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            background-color: red;
+            color: aqua;
+            margin-bottom: 30px;
+        }
+
+        .head4 {
+            background-image: url(new1\ \(1\).png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 26rem;
+            width: 100%;
+            background-color: red;
+            color: aqua;
+            margin-bottom: 30px;
+        }
+
+        /* .head2 {
+            height: 26rem;
+            width: 100%;
+            background-image: url(1n.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: aqua;
+            background-color: #2e2e2da6;
+            margin-bottom: 30px;
+        } */
+
+        .container {
+            height: 26rem;
+            width: 100%;
+            background-image: url(army.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            animation-name: animate1;
+            animation-duration: 18s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            margin-bottom: 20px;
+        }
+
+        @keyframes animate1 {
+            0% {
+                background-image: url(army.jpg);
+            }
+
+            35% {
+                background-image: url(army1.jpg);
+            }
+
+            75% {
+                background-image: url(army5.jpg);
+            }
+
+            80% {
+                background-image: url(army1.jpg);
+            }
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #b23d3dce;
+        }
+
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+
+            .prev,
+            .next,
+            .text {
+                font-size: 11px
+            }
+        }
+
+        .new {
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-decoration: underline;
+            text-decoration-color: green;
+        }
+
+        .head8 {
+            background-image: url(1n.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+
+            height: 300px;
+            color: aqua;
+            margin-bottom: 30px;
+        }
+
+        .a1 {
+            margin: 19px;
+            margin-top: 10px;
+            border: 3px solid white;
+            border-radius: 50%;
+        }
+
+        .a1:hover {
+            margin: 19px;
+            border: 4px solid rgb(255, 164, 164);
+            border-radius: 50%;
+
+        }
+
+        figcaption {
+            margin: 19px;
+            color: #FFEAD2;
+            font-size: large;
+        }
+
+        .p {
+            color: white;
+            font-family: 'Times New Roman';
+            font-size: larger;
+            margin: 19px;
+            text-align: justify;
+
+
+        }
+
+        .h1 {
+            text-decoration: underline;
+            color: white;
+        }
+
+        .head2 {
+            text-align: center;
+            margin-left: 200px;
+            margin-right: 200px;
+            height: 400px;
+            width: 850px;
+            background-color: rgb(0, 0, 0);
+            color: aqua;
+            margin-bottom: 30px;
+        }
+
+        .v1 {
+            border: 5px double green;
+            border-radius: 4px;
+        }
+
+        .about {
+            display: flex;
+            flex-direction: row;
+            /* flex-wrap: wrap; */
+        }
+
+        li {
+            text-align: left;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <div class="numbertext">1 / 5</div>
+        <div class="head2">
+            <img class="a1" src="Major-Sudhir-Kumar-Walia.jpg" alt="s1" height="200px" width="200px">
+            <figcaption>Major Sudhir Kumar Walia</figcaption>
+            <p class="p">
+                " Not gold but only men can make, A People great and strong ,
+
+                Men who, for truth and honor’s sake. Stand fast and suffer long."</p>
+        </div>
+    </div>
+
+
+    <div class="mySlides fade">
+
+        <div class="numbertext">2 / 5</div>
+        <div class="head2">
+            <h1 class="h1">About</h1>
+            <div class="about">
+                <p class="p">
+                    "Major Sudhir Kumar Walia was a decorated Officer in the Indian Army who served in the
+                    prestigious 9 Para (SF) unit. He was born on May 24, 1969 in the village of Banuri in the Kangra
+                    district of Himachal Pradesh to an Army veteran and his wife. He attended the Sainik School at
+                    Sujanpur Tihra and went on to gain admission into the National Defence Academy, Khadakwasla.
+                    Sudhir completed his training at the Indian Military Academy and was commissioned as a second
+                    lieutenant into the 4th battalion, The Jat Regiment on June 11, 1988."
+                </p>
+                <img src="s1.jpeg" class="v1">
+            </div>
+        </div>
+        <!--            
+        <div class="text">Caption Two</div> -->
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 5</div>
+        <div class="head2">
+            <h1 class="h1">The Kupwara Operation</h1>
+            <div class="about">
+                <p class="p">
+                    ❝After the end of Kargil war on 26 July 1999, the Army was continuing its high alert status to
+                    deal with any eventuality. Major Sudhir Walia and his team of daredevil commandos disguised as
+                    militants were carrying out the task of searching the hiding militants who could pose a serious
+                    threat to the security forces. On 29th Aug 1999, Major Sudhir Kumar Walia with a squad of five
+                    commandos was on a “Search and Destroy” mission in the dense jungle of “Hafruda Forest” in
+                    Kupwara district of J&K. The squad suddenly chanced upon a well-camouflaged hideout having
+                    twenty odd terrorists.
+
+                    Major Sudhir quickly organized his team and attacked the hideout. Leading from the front and
+                    showing rare courage Major Sudhir killed 4 militants single-handedly. However, during the
+                    process, he sustained gunshot wounds in his stomach.❞
+                </p>
+                <img src="s2.jpeg" class="v1" height="200px" width="200px">
+            </div>
+        </div>
+    </div>
+    <div class="mySlides fade">.
+        <!-- <div class="head2"> -->
+        <div class="numbertext">4 / 5</div>
+        <div class="head2">
+            <h1 class="h1">Awards</h1>
+            <!-- <img class="a1" src="vikram.jpeg" alt="s1" height="200px" width="200px"> -->
+            <!-- <figcaption>Captain Vikram Batra</figcaption> -->
+            <div class="about">
+                <p class="p">
+                <ul>
+
+                    <li>Sena Medal.
+                    </li>
+                    <li>For his bravery and exceptional service to the nation during his service career, Major
+                        Sudhir Kumar Walia was awarded Sena Medal two times,a rare honour for a soldier.
+                    </li>
+                    <li>Citation for Ashok Chakra.
+                    </li>
+                    <li>On 29 August 1999, Major Sudhir Kumar Walia, 9 PARA with a squad of five commandos chanced
+                        upon a well-camouflaged hideout with 20 dreaded terrorists. Maj Sudhir Kumar surged ahead of
+                        his squad and taking advantage of the element of surprise, neutralized and singlehandedly
+                        killed four militants. </li>
+
+                </ul>
+                </p>
+                <img src="s4.jpeg" class="v1">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mySlides fade">.
+    <!-- <div class="head2"> -->
+    <div class="numbertext">5 / 5</div>
+    <div class="head2">
+        <h1 class="h1">Legacy</h1>
+        <!-- <img class="a1" src="vikram.jpeg" alt="s1" height="200px" width="200px"> -->
+        <!-- <figcaption>Captain Vikram Batra</figcaption> -->
+        <div class="about">
+            <p class="p">
+            <ul>
+                <!-- <li>Captain Batra is also well known in India for using the slogan, Yeh Dil Maange More! as his signal to communicate mission success. He is also known for an interview in which he stated that Pakistani soldiers were aware of him as “Sher Shah” and addressed him as such in the middle of engagements. -->
+                <li>Chief Minister of Himachal Pradesh Virbhadra Singh laid the foundation stone of a Primary Health Center at Banuri in the memory of Major Sudhir walia ,in Jan 2007.
+               </li><li>Maj Sudhir Walia’s bust has been put up at Sainik School in Sujanpur , his Alma mater by the school authorities to honour its alumnus.</li>
+            </ul>
+            </p>
+            <img src="s3.jpeg" class="v1">
+        </div>
+    </div>
+</div>
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+</div>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+</script>
+</body></html>
